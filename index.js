@@ -39,8 +39,3 @@ const draw = () => {
 };
 
 setInterval(draw, 30);
-
-window.onresize = () => {
-	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight;
-}
