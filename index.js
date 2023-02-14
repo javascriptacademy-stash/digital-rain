@@ -16,7 +16,8 @@ const columns = canvas.width/fontSize;
 const rainDrops = [];
 
 for( let x = 0; x < columns; x++ ) {
-	rainDrops[x] = 1;
+	let value = (Math.random() - 0.8) * 100
+	rainDrops[x] = value < 0 ? value : 1000;
 }
 
 const draw = () => {
